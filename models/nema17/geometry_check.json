@@ -1,0 +1,15 @@
+{
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 71624.70141629847,
+  "bounding_box_mm": [
+    180.0000001,
+    36.00000020520844,
+    22.000000200000002
+  ],
+  "shaft_nominal_mm": 5.0,
+  "shaft_across_D_nominal_mm": 4.5,
+  "bore_diameter_mm": 5.3,
+  "bore_across_D_mm": 4.8,
+  "effective_lever_mm": 150.0
+}

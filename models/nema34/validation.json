@@ -1,0 +1,50 @@
+{
+  "parts": {
+    "nema34_printed_key": {
+      "valid_solid": true,
+      "watertight_mesh": true,
+      "consistent_winding": true,
+      "connected_meshes": 1,
+      "dimensions_mm": [
+        20.0,
+        4.9,
+        4.9
+      ]
+    },
+    "nema34_shaft_fit_coupon": {
+      "valid_solid": true,
+      "watertight_mesh": true,
+      "consistent_winding": true,
+      "connected_meshes": 1,
+      "dimensions_mm": [
+        34.0,
+        34.0,
+        6.0
+      ]
+    },
+    "nema34_stall_lever": {
+      "valid_solid": true,
+      "watertight_mesh": true,
+      "consistent_winding": true,
+      "connected_meshes": 1,
+      "dimensions_mm": [
+        186.0000001,
+        44.0000002,
+        26.000000200000002
+      ]
+    }
+  },
+  "feature_checks": [
+    "shaft_bore_open",
+    "keyway_open",
+    "keyway_side_wall_present",
+    "keyway_top_wall_present",
+    "radial_screw_passage_open",
+    "nut_slot_open",
+    "nut_slot_side_wall_present",
+    "tip_hole_open",
+    "arm_solid",
+    "nominal_shaft_and_steel_key_clearance"
+  ],
+  "physical_load_tested": false
+}

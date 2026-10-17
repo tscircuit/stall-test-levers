@@ -1,0 +1,36 @@
+{
+  "parts": {
+    "nema23_stall_lever": {
+      "valid_solid": true,
+      "watertight_mesh": true,
+      "consistent_winding": true,
+      "connected_meshes": 1,
+      "dimensions_mm": [
+        180.0000001,
+        36.0000002292482,
+        22.000000200000002
+      ]
+    },
+    "shaft_fit_coupon": {
+      "valid_solid": true,
+      "watertight_mesh": true,
+      "consistent_winding": true,
+      "connected_meshes": 1,
+      "dimensions_mm": [
+        26.0,
+        26.0,
+        6.0
+      ]
+    }
+  },
+  "feature_checks": [
+    "shaft_bore_open",
+    "D_flat_wall_present",
+    "radial_screw_passage_open",
+    "nut_slot_open",
+    "nut_slot_side_wall_present",
+    "tip_hole_open",
+    "arm_solid"
+  ],
+  "physical_load_tested": false
+}

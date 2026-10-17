@@ -1,0 +1,20 @@
+{
+  "valid": true,
+  "solids": 1,
+  "volume_mm3": 112984.55771189881,
+  "bounding_box_mm": [
+    186.0000001,
+    44.0000002,
+    26.000000200000002
+  ],
+  "shaft_nominal_mm": 14.0,
+  "key_width_nominal_mm": 5.0,
+  "key_height_nominal_mm": 5.0,
+  "key_length_recommended_mm": 20.0,
+  "keyway_width_mm": 5.2,
+  "keyway_top_from_axis_mm": 9.2,
+  "bore_diameter_mm": 14.3,
+  "rated_holding_torque_Nm": 4.8,
+  "scale_grams_at_hole_centre": 3263.0918815293708,
+  "effective_lever_mm": 150.0
+}

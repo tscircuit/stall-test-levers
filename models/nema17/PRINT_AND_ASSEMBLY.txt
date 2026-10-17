@@ -1,0 +1,54 @@
+NEMA 17 STALL-TEST LEVER — all dimensions in mm
+
+FITTING ASSUMPTION
+StepperOnline brand and NEMA 17 frame size do not identify shaft dimensions.
+This version assumes a 5.00 mm shaft, 4.50 mm flat-to-opposite-round distance.
+The D socket is 5.30 mm diameter and 4.80 mm across D: 0.15 mm clearance per
+surface. The flat faces toward the set screw. Shaft hole goes all the way through.
+Print nema17_shaft_fit_coupon.stl first. It should slide on with little play. A loose
+fit on a smaller shaft is not acceptable for a stall test; change the source
+dimensions rather than relying on the screw to bridge that gap.
+
+GEOMETRY
+Shaft axis to end-hole centre: 150 mm. Shaft axis to very end: 162 mm.
+Overall envelope approximately 180 x 36 x 22 mm (see geometry_check.json).
+Arm: 12 mm thick, tapered from 36 mm root width to 24 mm at the tip.
+Hub: 36 mm diameter x 22 mm tall; socket entry chamfers: 0.5 mm.
+End attachment hole: 6.5 mm diameter.
+
+HARDWARE AND ASSEMBLY
+One M4 x 16 socket set screw and one full-height standard M4 hex nut
+(7 mm across flats, about 3.2 mm thick). No hardware is included in the STL.
+Drop the nut into the top slot with a hex corner pointing down. Its threaded
+hole aligns with the radial screw passage. Insert the screw from the hub side
+and tighten gently onto the shaft flat. The printed hole is clearance only.
+The screw centre is 11 mm above the underside; position the lever along the
+shaft so that the screw contacts the actual shaft flat. Leave clearance
+between the lever and the stationary motor face. Do not force the fit.
+
+PRINTING
+The supplied orientation has the broad arm face on the bed, hub upwards.
+Use your established strong functional-part profile, with substantial walls
+and a solid hub/root region. Inspect the horizontal screw passage and clear
+it to 4.5 mm if necessary. Clean the nut pocket until the nut seats fully.
+Printing process, material, and layer bonding control strength. This geometry
+has not been physically tested or structurally rated.
+
+STALL TEST
+Use a secured stop/load fixture, with hands outside the sweep. Test at low
+speed and low current first; avoid impacts. At 150 mm perpendicular loading,
+tip force in newtons = torque in N m / 0.150 (e.g. 3 N m gives 20 N).
+This is a leverage calculation, not a safe-load rating. A longer lever reduces
+required tip force but does not reduce the torque carried by the hub/root.
+
+EDITING / REGENERATION
+Edit SHAFT_DIAMETER, SHAFT_ACROSS_D, RADIAL_CLEARANCE, or LEVER_RADIUS at the
+top of nema17_stall_lever.py. Tested using Python 3.12 and build123d 0.13.0.
+With build123d installed, run: python nema17_stall_lever.py
+The script exports STEP/STL files beside itself. Geometry validity and STL
+mesh checks for the supplied exports are recorded in geometry_check.json.
+
+REFERENCE
+The assumed 5 mm shaft diameter is documented for StepperOnline model
+17HS19-2004S1. Your exact motor and flat dimension remain unconfirmed.
+https://www.omc-stepperonline.com/3pcs-of-nema-17-bipolar-59ncm-84oz-in-2a-42x48mm-4-wires-w-1m-cable-connector-3-17hs19-2004s1

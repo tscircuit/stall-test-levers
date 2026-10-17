@@ -1,0 +1,67 @@
+NEMA 34 STALL LEVER — 34HS31-6004S1 — millimetres
+
+SHAFT INTERFACE
+This is a round keyed shaft, not a D shaft. A separate steel key bridges the
+shaft groove and the matching groove in the lever. Do not use a printed key.
+Shaft: nominal diameter 14.0. Bore: 14.30 (0.15 radial clearance).
+Steel key: 5 x 5 x 20 recommended. Hub groove: 5.20 wide, top 9.20 from axis.
+The reference drawing shows 5 mm key width and 16 mm from the opposite edge
+of the 14 mm shaft to the top of the key, giving a key top 9 mm from axis.
+The 5 mm key height is the selected standard hardware size; verify it seats
+in your motor. Nominal shaft groove floor is consequently 4 mm from axis.
+
+Print nema34_shaft_fit_coupon.stl first and check it with the real shaft AND
+installed metal key. It should slide on with little play. If it binds, adjust
+RADIAL_CLEARANCE / KEY_SIDE_CLEARANCE / KEY_TOP_CLEARANCE in the source.
+A fit coupon checks fit only; it does not establish strength.
+
+LEVER
+Shaft axis to end-hole centre: 150.0. To extreme tip: 164.0.
+Overall envelope: 186 x 44 x 26. Arm thickness: 16.0.
+Hub diameter: 44.0. Hub height: 26.0. End hole: 6.5 diameter.
+Solid tapered arm, no lightening holes. Bore has 0.5 mm circular lead-ins.
+
+HARDWARE
+One STEEL parallel key, 5 x 5 x 20.
+One M5 x 16 socket set screw (flat point preferred against the key).
+One standard full-height M5 hex nut (8 mm across flats, about 4 mm thick).
+No hardware is part of the printable STL. Use the metal key even if a screw
+alone appears to hold the unloaded lever.
+
+ASSEMBLY
+Seat the key in the motor groove. The hub groove is on the screw side (+Y).
+Slide the lever on, leaving clearance from the motor face. The motor has a
+32 mm shaft and a 25 mm long keyway: place the lever so the 20 mm key is fully
+inside both grooves and the radial screw contacts its middle. The lever bore
+is through, so the shaft need not protrude from the far side of the hub.
+Drop the M5 nut into the top pocket, one hex corner pointing down. Insert the
+M5 screw radially through the hub side and nut; tighten gently onto the steel
+key. The nut provides the thread. The printed screw passage is clearance only.
+Screw axis: 13 mm above lever underside. Check engagement before loading.
+
+PRINT
+Print with the broad arm face on the bed, raised hub upwards. Use a proven
+functional-part profile with substantial walls and a solid hub/root region.
+Clear the 5.6 mm radial passage and nut pocket if necessary. Printed strength
+depends on material, layer bonding and process. This lever is not load rated
+and has not been physically tested at 4.8 N m.
+
+FOOD-SCALE TEST
+At 4.8 N m with the lever horizontal and force vertical:
+- End-hole centre (150 mm): about 3263 grams.
+- Extreme tip (164 mm): about 2985 grams.
+Use the actual horizontal shaft-to-contact distance, not overall part length.
+Actual stall force depends on driver current and speed; 4.8 N m is the motor's
+advertised HOLDING torque. Zero/tare initial contact load. Start in contact,
+use low speed and low current initially, and keep hands outside the sweep.
+The scale must have enough capacity for the applied load. Avoid impacts.
+
+SOURCE AND EDITING
+nema34_stall_lever.py is the editable build123d source. Tested with Python
+3.12 and build123d 0.13.0. Run it to export the lever and fit coupon beside it.
+Motor product specifications (14 mm shaft, 32 mm projection, 25 mm keyway,
+4.8 N m holding torque, 6 A/phase):
+https://www.omc-stepperonline.com/s-series-nema-34-stepper-motor-4-8nm-679-87oz-in-14mm-key-way-shaft-1m-cable-34hs31-6004s1
+The reference drawing below is from OYOSTEPPER for the same 34HS31-6004S1
+model; verify the fit coupon against your StepperOnline motor.
+https://www.oyostepper.es/images/upload/File/34HS31-6004S1.pdf
